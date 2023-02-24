@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+    #a{grid-area: a1;}
+     #b{grid-area: b1;}
+      #c{grid-area: c1;}
+       #d{grid-area: d1;}
+        #e{grid-area: e1;}
+
+        .maindiv{
+            display:grid;
+            flex-direction: row;
+            grid-template-areas: "a1 a1 a1 a1 a1 a1"
+            "b1 b1 b1 c1 c1 c1"
+            "d1 d1 d1 e1 e1 e1";
+            padding: 10px;
+            background-color: darkgreen;
+            margin: 10px;
+            grid-gap: 10px;
+            border-radius: 10px;
+        }
+        .maindiv > div{
+             padding: 10px;
+              margin: 10px;
+               border-radius: 10px;
+               text-align: center;
+               text-decoration: darkgreen;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               color:darkgrey;
+
+        }
+       /* h1{
+            left:0px;
+            top:0px;
+            position: fixed;
+            background-color: darkmagenta;
+            color: darksalmon;
+            width: 100%;
+        }*/
+    
+    </style>
+   
+</head>
+<!-- grid -->
+<div class="maindiv">
+    <div id="a">introduction to grid box</div>
+    <div id="b">adding images</div>
+    <div id="c">adding contents</div>
+    <div id="d">contact us</div>
+    <div id="e">status of work</div>
+</div>
+    <h1>hello all</h1>
+</body>
+</html>

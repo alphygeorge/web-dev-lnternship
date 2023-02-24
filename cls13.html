@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 13</title>
+</head>
+<body>
+    <script>
+        // Global scope: accessed anywhere in program
+        var var1="Lily"
+        let let1="Bobby"
+        const const1="City"
+        // difference between var and let
+        //let can be acessed only inside block scope
+        //const can't be redeclared or reassigned
+        //  Functional scope: Accesed only inside a function 
+        function Data()
+        {
+            var a=10
+            let b=20
+            const c=30
+            console.log(a)
+            //block scope:only var can be acessed outside
+            if(30>20)
+            {
+                let e="End task"
+                var f="Function"
+                const pi=3.14
+                console.log(pi)
+            }
+            //comparison
+            var comp=a
+            console.log(2==2)
+            console.log(2==="2")
+            //array
+            //homogeneous 
+            var myarray=["Data","Details","Status"]
+            //heterogenous-> different datatypes
+            var array2=["da",1,746378.4,true]
+            console.log(myarray)
+            console.log(array2)
+            //Index Number-> PRINTING individual data
+           console.log(myarray[0])
+           console.log(array2[0])
+        }
+        Data()
+        // console.log(let1)
+        //= assignment
+        //==compare
+        //===compare value and data type
+        if(5>10)
+        {
+            console.log("The data is correct")
+        }
+        else{
+            console.log("The data is incorrect")
+        }
+        var username=prompt("Enter the user ")
+        var password=prompt("Enter the pass")
+        if(username=="admin" && password=="pass")
+        {
+            console.log("You are logged in")
+        }
+        else{
+            console.log("Enter the correct credentials")
+        }
+        // for loop
+        for(i=0;i<10;i++)
+        {
+        console.log("The value of count is"+i)
+        }
+        function fizzBuzz()
+        {
+            for(let i=1;i<=10;i++)
+            {
+                if(i%3==0)
+                {
+                    console.log('Fizz')
+
+                    if(i%5==0)
+                    {
+                        console.log('Buzz')
+                    }
+                    if(i%3==0 && i%5==0)
+                    {
+                        console.log('FizzBuzz')
+                    }
+                }
+                else
+                {
+                    console.log(i)
+                }
+            }
+        }
+        fizzBuzz() 
+        // OBJECT :consist of key and value
+        let object1={
+            Brand:"Asus",
+            Model:2163,
+            RAM:"128GB",
+            color:"white"
+        }
+        console.log(object1)
+        console.log(object1.Brand)
+
+    </script>
+</body>
+</html>
+<!-- DOM :Document Object Model is an API for HTML and XML -->
+<!-- DOM Selectors:select HTML elements within a document using javascript -->
+<!-- 5 ways -->
+<!-- 1.getElementsByTagName()
+2.getElementsByClassName()
+3.getElementsById()
+4.querySelector()
+5.querySelectorAll() -->
