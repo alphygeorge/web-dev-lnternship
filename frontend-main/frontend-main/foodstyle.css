@@ -1,0 +1,9 @@
+img.slide{
+    height: 650px;
+    position: relative;
+   
+}
+card-img-top.image{
+      size: 30px;
+      height: min-content;
+}
